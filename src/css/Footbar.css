@@ -1,0 +1,81 @@
+
+.contact-container {
+    margin-bottom: 0;
+    /* Espaciado inferior para separar del siguiente contenido */
+    display: flex;
+    /* Usamos flexbox para el contenedor de contacto */
+    justify-content: space-between;
+    /* Espacia los elementos dentro del contenedor */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+}
+
+.contact-item {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    /* Ancho mínimo para evitar que los elementos se vuelvan demasiado pequeños */
+    text-align: center;
+    /* Centra el texto en cada elemento de contacto */
+}
+
+.contact-item img {
+    max-width: 100%;
+}
+
+.contact-item p {
+    font-size: 1em;
+    /* Tamaño del texto */
+    color: #333;
+    /* Color del texto */
+}
+
+.contact-item.address p {
+    color: #006400;
+    /* Verde oscuro para la dirección */
+    font-weight: bold;
+    /* Hacer el texto en negritas */
+}
+
+.contact-item.phone p {
+    color: #ffffff;
+    /* Blanco para el teléfono */
+    font-weight: bold;
+    /* Hacer el texto en negritas */
+    text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+    /* Contorno negro */
+}
+
+.contact-item.email p {
+    color: #ff0000;
+    /* Rojo para el correo electrónico */
+    font-weight: bold;
+    /* Hacer el texto en negritas */
+}
+
+
+.footer-text {
+    padding: 0 20px;
+    background-color: #ffffff;
+    /* Fondo blanco para el pie de página */
+    color: #333;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar el texto */
+    margin: 20px auto;
+    /* Margen automático para centrar */
+    max-width: 1000px;
+    /* Ancho máximo del contenedor */
+}
+
+.footer-text p {
+    background-color: #ffffff;
+    /* Fondo blanco para el texto del pie de página */
+    color: #000000;
+    /* Color negro para el texto del pie de página */
+    font-size: 1.2em;
+    /* Tamaño del texto */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    margin: 0;
+}

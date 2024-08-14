@@ -1,0 +1,89 @@
+/* Contenedor principal del cronograma */
+.timeline-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+
+/* Elementos individuales del cronograma */
+.timeline-item {
+  display: flex;
+  flex-direction: column; /* Mantener siempre en columna */
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item .timeline-date {
+  font-size: 1.2em;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Alinear la fecha a la izquierda */
+}
+
+/* Contenido del evento del cronograma */
+.timeline-item .timeline-content {
+  background-color: #f9f9f9; /* Fondo claro */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de elevación al pasar el cursor */
+.timeline-item .timeline-content:hover {
+  transform: translateY(-5px); /* Eleva el recuadro hacia arriba */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+/* Responsivo: Pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-item .timeline-content {
+    max-width: 900px;
+  }
+}
+
+/* Línea vertical del cronograma */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  background-color: #007bff;
+}
+
+/* Puntos en la línea vertical */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+/* Responsivo: Ajustes en pantallas pequeñas */
+@media (max-width: 767px) {
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: -5px;
+  }
+
+  .timeline-item::after {
+    left: -13px;
+  }
+}

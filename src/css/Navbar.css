@@ -1,0 +1,173 @@
+/* Estilos generales */
+
+  
+  /* Estilos para el encabezado */
+  .App-header {
+    background-color: #ffffff; /* Fondo blanco para el header */
+    padding: 10px;
+    color: black; /* Color del texto en negro */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra todo el contenido del header */
+    position: relative; /* Para posicionar el botón de menú absolutamente en pantallas pequeñas */
+    font-family: 'Arial', sans-serif; /* Fuente moderna para el título */
+  }
+  
+  /* Logo */
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+  }
+  
+  /* Estilos para el menú */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Espaciado horizontal entre los elementos del menú */
+  }
+  
+  nav ul li a {
+    color: black; /* Color negro para los enlaces del menú */
+    text-decoration: none;
+  }
+  
+  /* Iconos sociales */
+  nav ul li.social-icons a {
+    margin-left: 10px;
+    color: #333; /* Color por defecto para los iconos sociales */
+  }
+  
+  /* Icono de Facebook */
+  .icon-facebook i {
+    color: #3b5998; /* Color específico para el icono de Facebook */
+  }
+  
+  /* Icono de Twitter */
+  .icon-twitter i {
+    color: #1da1f2; /* Color específico para el icono de Twitter */
+  }
+  
+  /* Icono de Instagram */
+  .icon-instagram i {
+    color: #e4405f; /* Color específico para el icono de Instagram */
+  }
+  
+  /* Efecto de hover para los iconos sociales */
+  nav ul li.social-icons a:hover {
+    color: #61dafb; /* Color de hover para todos los iconos sociales */
+  }
+  
+  /* Menú desplegable */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Menú desplegable en pantallas pequeñas */
+  .nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff; /* Fondo del menú desplegable */
+    position: absolute;
+    top: 60px; /* Ajusta según la altura del header */
+    left: 0;
+    z-index: 1; /* Asegura que el menú esté sobre otros elementos */
+  }
+  
+  /* Estilos para el botón de menú */
+  .menu-toggle {
+    display: none; /* Oculta el botón del menú en pantallas grandes */
+    position: absolute; /* Posiciona el botón de menú en relación al header */
+    right: 10px; /* Ajusta la posición a la derecha del header */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición verticalmente */
+    background: none;
+    border: none;
+    color: black; /* Color del botón de menú en pantallas pequeñas */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 3; /* Asegura que el botón esté sobre el menú */
+  }
+  
+  /* Menú en pantallas grandes */
+  @media (min-width: 769px) {
+    .menu-toggle {
+      display: none; /* Asegura que el botón de menú esté oculto en pantallas grandes */
+    }
+  
+    .nav-menu {
+      display: flex; /* Muestra el menú en pantallas grandes */
+    }
+  
+    nav {
+      display: flex;
+    }
+  
+    /* Muestra los íconos sociales en el menú */
+    nav ul li.social-icons {
+      display: flex;
+    }
+  }
+  
+  /* Menú en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .App-header {
+      flex-direction: row; /* Mantiene el flex-direction en fila para pantallas pequeñas */
+      align-items: center; /* Alinea verticalmente los elementos */
+      position: relative; /* Asegura que el botón de menú se posicione correctamente */
+      justify-content: space-between; /* Alinea el logo a la izquierda y el botón de menú a la derecha */
+    }
+  
+    .logo {
+      margin-right: 0; /* Elimina el margen derecho del logo */
+    }
+  
+    .menu-toggle {
+      display: block; /* Muestra el botón de menú en pantallas pequeñas */
+    }
+  
+    nav {
+      display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+    }
+  
+    .nav-menu {
+      display: none; /* Oculta el menú desplegable por defecto */
+    }
+  
+    .nav-menu.open {
+      display: flex; /* Muestra el menú cuando está abierto */
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-menu ul li {
+      margin: 10px 0; /* Ajusta el margen en pantallas pequeñas */
+    }
+  
+    /* Muestra los íconos en el botón de menú */
+    .menu-toggle .social-icons {
+      display: flex; /* Muestra los iconos sociales en el botón de menú */
+    }
+  }
+  
+
+  

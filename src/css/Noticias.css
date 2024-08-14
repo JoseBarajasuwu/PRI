@@ -1,0 +1,62 @@
+/* Contenedor principal de todas las noticias */
+.news-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+  }
+  
+  /* Estilo del título principal de la sección */
+  .news-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em; /* Tamaño más grande para el título */
+    color: #333; /* Color más oscuro para el título */
+    font-family: 'Arial', sans-serif; /* Fuente moderna para el título */
+  }
+  
+  /* Contenedor individual de cada noticia */
+  .news-item {
+    background-color: #f9f9f9; /* Fondo claro para cada noticia */
+    padding: 20px;
+    margin-bottom: 30px; /* Mayor separación entre noticias */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Esquinas ligeramente redondeadas */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave al pasar el ratón */
+  }
+  
+  /* Efecto al pasar el ratón sobre cada noticia */
+  .news-item:hover {
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  /* Estilo del título de cada noticia */
+  .news-item h2 {
+    margin-top: 0;
+    font-size: 1.8em; /* Tamaño más grande para los títulos de noticias */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilo de los párrafos dentro de cada noticia */
+  .news-item p {
+    margin: 10px 0;
+    color: #555; /* Color ligeramente más oscuro para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+  }
+  
+  /* Estilo de los enlaces dentro de cada noticia */
+  .news-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold; /* Enlace en negrita */
+    transition: color 0.2s ease; /* Transición suave del color del enlace */
+  }
+  
+  /* Estilo al pasar el ratón sobre los enlaces */
+  .news-item a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+    text-decoration: underline;
+  }
+  

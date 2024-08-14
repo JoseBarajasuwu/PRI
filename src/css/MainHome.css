@@ -1,0 +1,104 @@
+/* Estilos generales */
+.Home {
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Fuente moderna para el título */
+}
+
+/* Estilos para el contenedor principal de la imagen */
+.main-photo {
+    width: 100%;
+    height: auto;
+    /* Ajusta la altura de la imagen según su contenido */
+    max-height: 100vh;
+    /* Ocupa el alto máximo de la ventana */
+    overflow: hidden;
+    /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+    display: flex;
+    /* Usamos flexbox para centrar la imagen */
+    align-items: flex-start;
+    /* Alinea la imagen en la parte superior del contenedor */
+    justify-content: center;
+    /* Centra la imagen horizontalmente en el contenedor */
+}
+
+.main-photo img {
+    width: 100%;
+    /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 100%;
+    /* Asegura que la imagen no se extienda más allá del contenedor */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor manteniendo la proporción */
+}
+
+/* Estilos para el contenido debajo de la imagen */
+.main {
+    flex: 1;
+    /* Permite que este contenedor ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* Espaciado alrededor del contenido */
+}
+
+.text-content {
+    padding: 0 20px;
+    background-color: #ffffff;
+    /* Fondo blanco para el texto */
+    color: #333;
+    /* Color del texto */
+    text-align: left;
+    /* Alineación del texto a la izquierda */
+    max-width: 800px;
+    /* Máximo ancho del contenedor de texto */
+    margin: 0 auto;
+    /* Centrar el contenedor de texto */
+}
+
+.text-content h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    /* Tamaño del título principal */
+}
+
+.text-content h2 {
+    margin-top: 0;
+    font-size: 2em;
+    /* Tamaño del subtítulo */
+    color: #555;
+    /* Color del subtítulo */
+}
+
+.text-content p {
+    margin-top: 0;
+    font-size: 1em;
+    /* Tamaño del texto */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+}
+
+.rectangle-image {
+    margin: 30px auto;
+    /* Separación del texto y centrado */
+    width: 80%;
+    /* Ancho de la imagen rectangular */
+    max-width: 1000px;
+    /* Ancho máximo */
+}
+
+.rectangle-image img {
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Opcional: bordes redondeados */
+}
+
+.cta-text {
+    padding: 0 20px;
+    /*margin-bottom: 0; /* Espaciado inferior para separar del siguiente contenido */
+    margin: 0 auto;
+    /* Centra el elemento horizontalmente */
+}
+
