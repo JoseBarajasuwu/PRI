@@ -18,7 +18,7 @@ export const Footbar = () => {
                 </div>
             </div>
             <div className="footer-text">
-                <p>Administración 2021 - 2024 Gobierno Municipal de los jotos del pp chu.</p>
+                <p>Administración 2021 - 2024 Gobierno Municipal de Tenamaxtlán.</p>
             </div>
 
         </div>
