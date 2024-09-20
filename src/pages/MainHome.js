@@ -5,7 +5,7 @@ export const MainHome = () => {
     <div className="Home">
       <main>
         <div className="main-photo">
-          <img src="meno.jpg" alt="Main" />
+          <img src="meno.jpeg" alt="Main" />
         </div>
         <div className="text-content">
           <h1>Gobierno de Tenamaxtlán</h1>

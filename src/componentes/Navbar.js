@@ -45,9 +45,11 @@ export const Navbar = () => {
                         <li><a href="/contacto">Contacto</a></li>
                         <li><a href="#menu5">Transparencia</a></li>
                         <li className="social-icons">
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="icon-facebook"><i className="fab fa-facebook"></i></a>
-                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="icon-twitter"><i className="fab fa-twitter"></i></a>
+                            <a href="https://maps.app.goo.gl/ens661f4C62jaUX17" target="_blank" rel="noopener noreferrer" className="icon-google-maps"><i class="fas fa-map-marker-alt"></i></a>
+                            <a href="https://www.facebook.com/GobiernoDeTenamaxtlan" target="_blank" rel="noopener noreferrer" className="icon-facebook"><i className="fab fa-facebook"></i></a>
+                            
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="icon-instagram"><i className="fab fa-instagram"></i></a>
+
                         </li>
                     </ul>
                 </nav>
